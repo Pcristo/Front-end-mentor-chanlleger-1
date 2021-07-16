@@ -1,0 +1,455 @@
+
+/* GOOGLE FONTS PUBLIC SANS */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;1,700&display=swap');
+
+:root{
+    --primary-dark-blue-:hsl(233, 26%, 24%);
+    --primary-lime-green: hsl(136, 65%, 51%);
+    --primary-bright-cyan: hsl(192, 70%, 51%);
+
+    --neuteal-grayish-blue: hsl(233, 8%, 62%);
+    --neuteal-light-grayish: Blue: hsl(220, 16%, 96%);
+    --neuteal-very-light-gray: hsl(0, 0%, 98%);
+    --neuteal-white: hsl(0, 0%, 100%);
+
+    --font-weight-300:300;
+    --font-weight-400:400;
+    --font-weight-700:700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+
+/* HEADER SECTION */
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    background:#fff;
+    width: 100%;
+    z-index: 10!important;
+    position: relative;
+}
+
+.menu .logo img{
+    display: block;
+    padding-left: 50px;
+    z-index: 10;
+}
+
+.menu .menu-list ul li{
+    display: inline;
+    margin-right: 15px;
+}
+
+.menu .menu-list ul li a{
+   text-decoration: none;
+   color: var(--neuteal-grayish-blue);
+}
+
+.menu-list .button{
+    width: 25%;
+}
+
+ .btn, .menu-button-top a{
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    padding: 10px 25px;
+    border-radius: 25px;
+    color:#fff;
+    transition: 0.3s;
+ }
+
+.menu-button a, .menu-button-top a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px ;
+    display: block;
+}
+ 
+ .menu-button:hover {
+    background: linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+ }
+
+ .menu .fa-times,
+ .menu .fa-bars{
+     display: none;
+     
+ }
+
+ .header{
+     background-image: url(../images/bg-intro-desktop.svg);
+     width: 100%;
+     height: 100vh;
+     background-position:  500px -300px;
+     background-size: cover;
+     background-repeat: no-repeat;
+     z-index: 2!important;
+ }
+
+  .header .header-text-box{
+     padding: 150px 50px;
+ }
+
+ .header .header-text-box h1{
+     font-size: 3rem;
+     font-weight: var(--font-weight-400);
+     padding-bottom: 25px;
+}
+
+.header .header-text-box p{
+    font-size: 1.1rem;
+    padding-bottom: 25px;
+}
+
+ .header-img{
+     padding: 25px;
+     margin-top: -50px;
+     width: 100%;
+     z-index: 1;
+     position: relative;
+    
+    }
+
+    /* SERVICES SECTION */
+
+    .services-text-box .col-md-12{
+        padding:20px;
+        margin-top: -100px;
+    }
+
+    .services-text-box .col-md-12 h3{
+        font-size: 2.5rem;
+        font-weight: var(--font-weight-700);
+        margin-bottom: 50px;
+    }
+        
+     .services .container .col-md-3{
+         padding: 25px;
+        
+     } 
+
+     .services .container .col-md-3 img{
+        margin-bottom: 15px;
+        width: 50px;
+    } 
+
+    .services .container .col-md-3 h2{
+        font-size: 1.5rem;
+        font-weight: var(--font-weight-700);
+    }
+
+    .services .container .col-md-3 p{
+        font-size: 1.1rem;
+    }
+
+    /* ARTICLES SECTION */
+    
+
+    .articles-section{
+        margin-top: 100px;
+    }
+
+    .img-articles{
+        width: 100%!important;
+        height: 150px;
+    }
+    .articles-section span{
+        font-size: 0.9rem;
+        font-weight: var(--font-weight-300);
+        padding:10px 0;
+    }
+
+    .articles-section h2{
+         font-size: 1.2rem!important;
+         padding: 15px 0;
+    }
+
+    .articles-section h1{
+        margin-left: 10px;
+        font-size: 2rem;
+    }
+
+    /* FOOTER SECTION */
+
+    .footer{
+        margin-top: 100px;
+        width: 100%;
+        background-color: var(--primary-dark-blue-);
+        padding: 35px 50px;
+    }
+
+    .footer .logo{
+        filter: invert(1);
+    }
+
+    .footer .social{
+        margin-left: -25px;
+    }
+
+    .footer .social ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin-top: 50px;
+    }
+
+    .footer .social ul li a {
+        margin-right: 8px;
+    }
+
+    .footer .col-md-3 ul{
+        list-style: none;
+    }
+
+    .footer .col-md-3 ul li a{
+        text-decoration: none;
+        color: var(--neuteal-very-light-gray);
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .footer .col-md-3 .menu-button{
+        margin-bottom: 25px;
+    }
+
+    .footer .col-md-3 p{
+        font-size: 12px;
+        color: var(--neuteal-very-light-gray);
+    }
+
+    /* LAST FOOTER */
+
+    .last-footer{
+        background-color: var(--neuteal-grayish-blue);
+        padding: 15px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .last-footer p{
+        font-size: 13px;
+    }
+
+
+    .last-footer a{
+        text-decoration: none;
+    }
+
+
+
+
+ /* MEDIA QUERIES */
+
+ /* MENU */
+
+ @media only screen and (max-width:1000px){
+
+    .header-img{
+        margin-top: 120px;
+        width: 340px;
+        max-width: none;
+        margin-right: 25px;
+       }
+
+       .footer{
+        padding: 35px 25px;
+    }
+
+    .footer .col-md-3 .menu-button a{
+        font-size: 15px;
+    }
+
+ }
+
+
+ @media only screen and (max-width:850px){
+
+
+    .menu .fa-bars{
+        display: block;
+        font-size: 25px;
+        z-index: 10;
+    }
+
+    .menu-button-top{
+        display: none;
+    }
+
+    .menu .fa-bars, .menu .fa-times{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .menu .menu-list{
+        background: #fff;
+        margin-top: -380px;
+        text-align: center;
+        transition: 0.5s;
+        position: fixed;
+        width: 500px;
+        padding-top: 50px;
+        height: 300px;
+        margin-left: 45%;
+        transform: translateX(-50%);
+        z-index: 5;
+    }
+
+    .menu .menu-list ul li a{
+        font-size: 22px;
+        
+    }
+
+    .menu .menu-list ul li{
+        display: block;
+        margin-bottom: 15px;
+        
+    }
+
+    .menu-list.active{
+         margin-top: 350px;
+     }
+
+     .fa-bars.active{
+         display: none!important;
+     }
+
+     .fa-times.active{
+        display: block!important;
+        font-size: 25px;
+    }
+
+
+     .menu .logo img{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .header{
+        background-position:  200px -150px;
+
+    }
+
+ }
+
+  
+ @media only screen and (max-width:767px){
+
+    .menu{
+        position: relative;
+    }
+
+     .row-reverse{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+
+     .header-img{
+         margin: -170px auto;
+         width: 100%;
+         z-index: 0;
+       }
+
+       .header .header-text-box{
+           padding: 25px;
+           margin-top: 320px;
+    }
+
+    .services-text-box .col-md-12{
+        margin-top: -35px;
+    }
+
+    .img-articles{
+        width: 100%!important;
+        height: 350px;
+    }
+ }
+  
+
+ @media only screen and (max-width:650px){
+
+    
+    .menu .menu-list{
+        width: 350px;
+    }
+
+ 
+
+ }
+
+ @media only screen and (max-width:500px){
+
+    body{
+        text-align: center;
+    }
+
+    .header-bg-desktop{
+        display: none;
+    }
+
+    .header-bg-mobile{
+        display: block;
+        background-image: linear-gradient(rgba(0,0,0,0.5), #fff), url(../images/bg-intro-mobile.svg);
+        width: 100%;
+        height: 100vh;
+        background-position: center -300px;
+       
+    }
+
+    .menu .menu-list{
+        width: 360px;
+       
+    }
+
+    .header .header-text-box{
+        padding: 25px;
+        text-align: center;
+         margin-top: 150px;
+  }
+
+  .header .header-text-box h1{
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+ }
+   
+ .footer{
+     text-align: center;
+ }
+
+ .footer .social ul{
+     justify-content: center;
+ 
+ }
+
+ .menu-button-footer{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+     margin-left: 29%;
+ }
+
+
+}
+
+@media only screen and (max-width:325px){
+
+    .menu-button-footer{
+        width: 70%;
+        margin-left: 22%;
+    }
+
+}
+
+ 
